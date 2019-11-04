@@ -22,6 +22,7 @@ module.exports = {
       //   loader: "babel-loader"
       // }
       {
+        //先将tsxz转化成es6,再将es6使用babel转码为es5
         test: /\.tsx?$/,
         loader: "babel-loader!awesome-typescript-loader"
       }
@@ -31,15 +32,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "../index.html",
       template: "index.html"
-      // filename: path.resolve(__dirname, "./index.html")
     })
-    // new webpack.ProvidePlugin({
-    //   React: "react",
-    //   ReactDOM: "react-dom"
-    // })
   ]
-  // externals: {
-  //   react: "React",
-  //   "react-dom": "ReactDOM"
-  // }
 };

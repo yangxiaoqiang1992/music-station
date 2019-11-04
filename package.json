@@ -2,7 +2,7 @@
   "name": "music-station",
   "version": "1.0.0",
   "description": "a music app",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "build": "webpack --config webpack.config.js --progress --color",
     "test": "echo \"Error: no test specified\" && exit 1"
